@@ -1,6 +1,8 @@
 <a name="top"></a>
 
-REST Api
+NOTES REST Api
+
+Use `.env.example` as reference to create a `.env` file in the `backend` folder. And simply run `docker compose up` to start the database, backend server, and mongo-express server.
 
 # Table of contents
 
