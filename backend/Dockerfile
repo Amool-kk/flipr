@@ -12,4 +12,9 @@ COPY . ./
 
 EXPOSE $PORT
 
+RUN apt-get update && apt-get install curl -y
+
+HEALTHCHECK CMD curl -f http://localhost:$PORT || exit 1
+
 CMD ["node","/app/app.js"]
+
