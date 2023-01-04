@@ -4,7 +4,7 @@ const auth = require("./auth")
 const routes = Router()
 
 routes.get('/', (req, res) => {
-    res.send("api done")
+    res.status(200).json({msg:"done"})
 })
 
 module.exports = {
